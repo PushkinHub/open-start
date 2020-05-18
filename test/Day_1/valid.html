@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valid</title>
+</head>
+<body>
+
+<label for="phone" id="message">Пожалуйста, введите номер телефона!</label><br/>
+<input id="phone" name="phone" type="text"/>
+<input name="button" type="submit" onClick="validPhone();">
+
+<script>
+
+    function validPhone() {
+        var regExp = /^((8|\+7)[\- ]?)(\(?\d{3}\)?[\- ]?)?[\d\- ]{8,10}$/;
+        var enteredNumber = document.getElementById('phone').value;
+        var valid = regExp.test(enteredNumber);
+
+        if (valid) {
+            output = 'Номер телефона введен правильно!';
+        } else {
+            output = 'Номер телефона введен неправильно!';
+        }
+
+        document.getElementById('message').innerHTML = output;
+        return valid;
+    }
+
+</script>
+
+</body>
+</html>
