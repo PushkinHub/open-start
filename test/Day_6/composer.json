@@ -1,0 +1,12 @@
+{
+    "name": "danila/day_6",
+    "authors": [
+        {
+            "name": "John Smith",
+            "email": "john@example.com"
+        }
+    ],
+    "require": {
+        "spatie/simple-excel": "^1.4"
+    }
+}
