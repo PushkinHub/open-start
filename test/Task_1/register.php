@@ -13,6 +13,12 @@ if ($_SESSION['user']) {
 <body>
 
 <form>
+    <label for="first-name">Имя</label>
+    <input id="first-name" type="text" name="first-name">
+    <label for="second-name">Фамилия</label>
+    <input id="second-name" type="text" name="second-name">
+    <label for="email">Ваша почта</label>
+    <input id="email" type="text" name="email">
     <label for="login">Логин</label>
     <input id="login" type="text" name="login">
     <label for="password">Пароль</label>
